@@ -13,9 +13,9 @@ and save the names of images on Realm local database
 on the application you will see the counter of images on Realm database
 
 When the background task happend it will uploud image one by one to Firebase storage
-and delete it from Realm and also delete the image from document Folder
+and delete it from Realm and also delete the image from Document folder
 
-You can check if it finish uplouding by wathing the count on screen it will become 0 if it uplouded every images 
+You can check if it finish uplouded by watching the counter on main screen it will become 0 if it uplouded every images 
 also you can check the firebase storage to see if there is any image did uplouded 
 
 ### Notice ! :

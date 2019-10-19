@@ -75,6 +75,7 @@ Xcode will said
 now click on `Play` button (this button you will found it above debug logs)
 
 now the background will start immediately. you will see if it work or not !
+
 return back to the application you will see it chagne to 0
 and when you check the Firebase Storage you will found all the images there 
 

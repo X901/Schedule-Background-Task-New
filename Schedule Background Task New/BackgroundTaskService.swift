@@ -92,11 +92,13 @@ extension BackgroundTaskService {
      
 
      func handleImageUploadingTask(task: BGProcessingTask) {
+        // it's importing to recall it here
+        // the reason why is because you want to Schedule new background task when you doing current Background Task
         requestUplouadBackgroungTask() // Recall
          
     
         // if for any reason the system choose to stop the task it will do any thing inside this
-        // you need to stop anything your doing
+        // you need to stop everything you are doing right now
                    task.expirationHandler = {
                      //This Block call by System
                      //Cancel your all taks & queues
@@ -131,9 +133,13 @@ extension BackgroundTaskService {
                          }
    
          }
+            // if the task sussess you need to tell the system that you need finish with success
              task.setTaskCompleted(success: true)
 
          }else {
+            // here i'm not very sure if I need to write this or not
+            // but I notice if I did already uploud all images and make new background task it will display a Error said programmer error
+            // so I understand that I need to tell the system it's complete with not success !
             task.setTaskCompleted(success: false)
         }
 
@@ -161,7 +167,7 @@ extension BackgroundTaskService {
                  
                  if dirs.count > 0 {
                      let dir = dirs[0] //documents directory
-                     filePath = dir.appendingFormat("/" + fileNameToDelete)
+                     filePath = dir.appendingFormat("/" + fileNameToDelete + ".jpg")
                      print("Local path = \(filePath)")
           
                  } else {

@@ -1,7 +1,5 @@
 # Schedule-Background-Task-New
 
-### This is an example on ho# Schedule-Background-Task-New
-
 ### This is an example of how to uploads images on Background in iOS 13 using new Framework
 ### called BackgroundTasks
 

@@ -62,7 +62,7 @@ Apple said you can debug the Background task by doing these steps
 `e -l objc -- (void)[[BGTaskScheduler sharedScheduler] _simulateLaunchForTaskWithIdentifier:@"com.basil.imagesuploud"]`
 
 notice that my background task identifier is `com.basil.imagesuploud`
-I did add it on `info.plist` the file, you need to change it depending on your Identifier. if you only test my Demo project, it will be the same identifier
+I did add it to `info.plist` the file. You need to change it depending on your Identifier. if you only test my Demo project, it will be the same Identifier
 
 after writing that line and click enter
 Xcode will say
@@ -73,14 +73,14 @@ now click on `Play` button (this button you will found it above debug logs)
 
 Now the Background will start immediately. You will see if it work or not!
 
-return back to the application you will see it change to 0
+return to the application you will see it change to 0
 and when you check the Firebase Storage, you will found all the images there 
 
 ### one last thing is to debug if the system kill/stop the background task
 same steps as before but only change it to 
 `e -l objc -- (void)[[BGTaskScheduler sharedScheduler] _simulateExpirationForTaskWithIdentifier:@"com.basil.imagesuploud"]`
 
-The great example of debugging it, you can test it if you do the above code and after that do the below code on very short time
+The excellent example of debugging it, you can test it if you do the above code and after that do the below code on short time
 you will notice the task stop before uploading all images that mean it is working fine!
 
 

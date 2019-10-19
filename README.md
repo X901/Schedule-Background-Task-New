@@ -43,29 +43,29 @@ because we only need it for testing only , it's not good idea to make it like th
 - move the project folder above `Terminal` icon . This is the fastest way to go directly indisd the project folder on `Terminal`
 - then final step write `pod install` on terminal to install Firebase Storage and Realm Libreies 
 
-I did exmplain everything on the project check the `BackgroundTaskService.swift` and `AppDelegate.swift` and also `SceneDelegate.swift`
+I did explain everything on the project check the `BackgroundTaskService.swift` and `AppDelegate.swift` and also `SceneDelegate.swift`
 
 maybe you will wondering what is SceneDelegate ?
 this new on iOS 13 project the only thing you need to know NOW is you need to call `background task request` when the app moving to Background 
 on `sceneDidEnterBackground` function inside `SceneDelegate.swift`
 
 what if your project is old and you don't have SceneDelegate.swift ?
-its ok only you need to open `AppDelegate` and add `applicationDidEnterBackground`
+its ok, You need to open `AppDelegate` and add `applicationDidEnterBackground`
 and inside it call `BackgroundTaskService.shared.enterBackground()`
 
 ### I did mention that maybe the background task won't happend immediately then how to debug it ?
 Apple said you can debug the Background task by doing this steps 
 - Connect you device to your Mac
 - open Xcode project and run the project
-- now go to home screen this will let ypu enter to the background
+- now go to home screen this will let you enter to the background
 - return back to your project
-- click on `Puese` button (this button you will find it above debug logs)
+- click on `Puese` button (this button you will found it above debug logs)
 - now enter this line 
 
 `e -l objc -- (void)[[BGTaskScheduler sharedScheduler] _simulateLaunchForTaskWithIdentifier:@"com.basil.imagesuploud"]`
 
 notice that my background task idntifier is `com.basil.imagesuploud`
-I did added it on info.plist file you need to change it depend on your Identifier. if you will only test my Demo project it will be the same idntifier
+I did add it on `info.plist` file you need to change it depend on your Identifier. if you will only test my Demo project it will be the same idntifier
 
 after write that line and click enter
 Xcode will said
@@ -76,13 +76,13 @@ now click on `Play` button (this button you will found it above debug logs)
 
 now the background will start immediately. you will see if it work or not !
 return back to the application you will see it chagne to 0
-and when you check the Firebase Storage you will find all the images there 
+and when you check the Firebase Storage you will found all the images there 
 
 ### one last thing is to debug if the system kill/stop the background task
 same steps as before but only change it to 
 `e -l objc -- (void)[[BGTaskScheduler sharedScheduler] _simulateExpirationForTaskWithIdentifier:@"com.basil.imagesuploud"]`
 
-The great example on debugging it , you can test it if you do the above code and after that do the bloew code on very shurt time
+The great example on debugging it , you can test it if you do the above code and after that do the bloew code on very short time
 you will notice the task stop before uplouding all images that mean it working fine !
 
 

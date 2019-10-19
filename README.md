@@ -16,7 +16,7 @@ When the background task happened, it will upload image one by one to Firebase s
 and delete it from Realm and also delete the image from Document folder
 
 You can check if it finishes uploaded by watching the counter on the main screen, it will become 0 if it uploaded every image 
-also you can check the firebase storage to see if there is any image did uploaded 
+also you can check the firebase storage to see if there is any image did upload 
 
 
 ### Prepare to use the Demo :
@@ -37,7 +37,7 @@ because we need it for testing only, it's not a good idea to make it like this o
 - move `GoogleService-Info.plist` that you did download from `Firebase` website to the project
 - you need to use `Cocoapods` if you don't already have it installed on you Mac install it from their website
 - open Terminal
-- Move the project folder above `Terminal` icon. This is the fastest way to go directly indisd the project folder on `Terminal`
+- Move the project folder above `Terminal` icon. This is the fastest way to go directly inside the project folder on `Terminal`
 - then final step write `pod install` on Terminal to install Firebase Storage and Realm Libraries 
 
 I did explain everything on the project check the `BackgroundTaskService.swift` and `AppDelegate.swift` and also `SceneDelegate.swift`

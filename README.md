@@ -25,7 +25,7 @@ this depend on my testing
 ### Prepare to use the Demo :
 - The frist thing you need to do is change the `Bundele ID` to unique id
 - create new `Firebase` Project and use the `Bundele ID` you did create
-- change the Firebase Rule to
+- change the Firebase Storage Rule to
 
 `service firebase.storage {
   match /b/{bucket}/o {

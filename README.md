@@ -4,8 +4,8 @@
 ### called BackgroundTasks
 
 ### About the Project:
-I did added 10 imges with high quailiy (every image have size between 1 MB to 3 MB) on Assets Folder
-if you want to know here I get them is from https://unsplash.com/
+I did add 10 images with high quailiy (every image have size between 1 MB to 3 MB) on Assets Folder
+if you want to know where I got them is from https://unsplash.com/
 
 When you open the application for the frist time it will save the 10 imges on Decoment Folder
 and save the name of the image on Realm local database

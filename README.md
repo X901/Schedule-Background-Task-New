@@ -40,3 +40,26 @@ on `sceneDidEnterBackground` function inside `SceneDelegate.swift`
 what if your project is old and you don't have SceneDelegate.swift ?
 its ok only you need to open `AppDelegate` and add `applicationDidEnterBackground`
 and inside it call `BackgroundTaskService.shared.enterBackground()`
+
+### I did mention that maybe the background task won't happend immediately then how to debug it ?
+Apple said you can debug the Background task by doing this steps 
+- Connect you device to your Mac
+- open Xcode project and run the project
+- now go to home screen this will let ypu enter to the background
+- return back to your project
+- click on `Puese` button (this button you will find it above debug logs)
+- now enter this line 
+
+`e -l objc -- (void)[[BGTaskScheduler sharedScheduler] _simulateLaunchForTaskWithIdentifier:@"com.basil.imagesuploud"]`
+
+notice that my background task idntifier is com.basil.imagesuploud
+I did added iton info.plist file you need to change it depend on your Identifier if you will only test my project it will be the same idntifier
+
+after write the line and click enter
+the excode will said
+
+2019-10-19 17:00:14.615646+0300 Schedule Background Task New[48148:1564536] Simulating launch for task with identifier com.basil.imagesuploud
+
+now click on `Play` button (this button you will find it above debug logs)
+
+now the background will start immediately will see if it work or not !

@@ -1,7 +1,6 @@
 # Schedule-Background-Task-New
 
-### This is an example on how to upload images in Background on iOS 13 using this new Framework
-### called BackgroundTasks
+### This is an example on how to upload images in Background on iOS 13 using a framework called BackgroundTasks
 
 ### About the Project:
 I added ten high quailiy images (every image have size between 1 MB to 3 MB) in the Assets Folder,
@@ -11,9 +10,8 @@ When you open the application for the frist time it will save ten images in the 
 
 When the background task finishes it will upload each to the Firebase storage and then delete it from Realm and the documents folder.
 
-You can check if it finish uplouded by watching the counter on main screen it will become 0 if it uplouded every images 
-also you can check the firebase storage to see if there is any image did uplouded 
-
+You can check if it finishes uploaded by watching the counter on the main screen, it will become 0 if it uploaded every image 
+also you can check the firebase storage to see if there is any image did upload 
 
 ### Using the Demo project:
 - First change the `Bundle ID` to unique id
@@ -36,10 +34,12 @@ also you can check the firebase storage to see if there is any image did uploude
 - Drill down to the project on terminal. One easy way to do this is by typing cd and then dragging the folder to terminal
 - Once you have drilled down to your project then type and enter`pod install`, this will install the libraries Firebase Storage and Realm  
 
+
 For more explanation check the following files `BackgroundTaskService.swift` and `AppDelegate.swift` and `SceneDelegate.swift`
 
 You are probably wondering what is SceneDelegate?
 This is new on iOS 13. The only thing you need to know now is that you need to call `background task request` when the app moves to Background in the function `sceneDidEnterBackground` inside the file `SceneDelegate.swift`
+
 
 What should you do if your project doesn't have SceneDelegate.swift ?
 You need to open `AppDelegate` and add `applicationDidEnterBackground`
@@ -52,6 +52,7 @@ Apple said you can debug the Background task by doing this steps
 - now go to the home screen this will let you enter into background mode
 - go back to your project
 - click on the `Pause` button (this button you will found it above debug logs)
+
 - now enter this line 
 
 `e -l objc -- (void)[[BGTaskScheduler sharedScheduler] _simulateLaunchForTaskWithIdentifier:@"com.basil.imagesuploud"]`
@@ -60,6 +61,7 @@ notice that my background task identifier is `com.basil.imagesuploud`
 You need to change the identifier in the `info.plist` file for your project to match the bundle id. For my demo project you don't need to change anything
 
 After you write that line and click enter
+
 Xcode will say
 
 2019-10-19 17:00:14.615646+0300 Schedule Background Task New[48148:1564536] Simulating launch for task with identifier com.basil.imagesuploud
@@ -75,7 +77,8 @@ and when you check the Firebase Storage you will find all the images there
 same steps as above but only change the command to 
 `e -l objc -- (void)[[BGTaskScheduler sharedScheduler] _simulateExpirationForTaskWithIdentifier:@"com.basil.imagesuploud"]`
 
-The great example on debugging it , you can test it if you do the above code and after that do the below code on very short time you will notice the task stop before uplouding all images that mean it working fine !
+The excellent example of debugging it, you can test it if you do the above code and after that do the below code on short time
+you will notice the task stop before uploading all images that mean it is working fine!
 
 
 ### Resources 

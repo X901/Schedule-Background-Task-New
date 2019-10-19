@@ -35,7 +35,7 @@ this depend on my testing
   }
 }`
 
-because we only need to for test only 
+because we only need it for testing only , it's not good idea to make it like this on Production version !
 
 - move `GoogleService-Info.plist` that you did downloaded from `Firebase` website to the project
 - you need to use `Cocoapods` if you don't already have it installed on you Mac install it from they website

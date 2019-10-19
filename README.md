@@ -24,7 +24,19 @@ this depend on my testing
 
 ### Prepare to use the Demo :
 - The frist thing you need to do is change the `Bundele ID` to unique id
-- create new `Firebase` Project and use the `Bundele ID` you did created
+- create new `Firebase` Project and use the `Bundele ID` you did create
+- change the Firebase Rule to
+
+`service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write;
+    }
+  }
+}`
+
+because we only need to for test only 
+
 - move `GoogleService-Info.plist` that you did downloaded from `Firebase` website to the project
 - you need to use `Cocoapods` if you don't already have it installed on you Mac install it from they website
 - open Terminal

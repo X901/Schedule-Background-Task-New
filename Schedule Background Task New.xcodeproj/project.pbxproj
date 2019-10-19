@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB68A810227A070088E2D5FC /* Pods_Schedule_Background_Task_New.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A0AB68BFD76D6ACCD77F0E /* Pods_Schedule_Background_Task_New.framework */; };
+		FD8F219223547DD200D1978D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8F219123547DD200D1978D /* AppDelegate.swift */; };
+		FD8F219423547DD200D1978D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8F219323547DD200D1978D /* SceneDelegate.swift */; };
+		FD8F219623547DD200D1978D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8F219523547DD200D1978D /* ViewController.swift */; };
+		FD8F219923547DD200D1978D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD8F219723547DD200D1978D /* Main.storyboard */; };
+		FD8F219B23547DD300D1978D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD8F219A23547DD300D1978D /* Assets.xcassets */; };
+		FD8F219E23547DD300D1978D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD8F219C23547DD300D1978D /* LaunchScreen.storyboard */; };
+		FD8F21A6235480CC00D1978D /* BackgroundTaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8F21A5235480CC00D1978D /* BackgroundTaskService.swift */; };
+		FD8F21AA235484AA00D1978D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD8F21A9235484AA00D1978D /* GoogleService-Info.plist */; };
+		FDB4F8A02358E5F30029EC03 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB4F89F2358E5F30029EC03 /* ImageModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		50A0AB68BFD76D6ACCD77F0E /* Pods_Schedule_Background_Task_New.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schedule_Background_Task_New.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D6C85094DD35B23917F673C /* Pods-Schedule Background Task New.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schedule Background Task New.release.xcconfig"; path = "Target Support Files/Pods-Schedule Background Task New/Pods-Schedule Background Task New.release.xcconfig"; sourceTree = "<group>"; };
+		C7D00A3D15237FE88015C516 /* Pods-Schedule Background Task New.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schedule Background Task New.debug.xcconfig"; path = "Target Support Files/Pods-Schedule Background Task New/Pods-Schedule Background Task New.debug.xcconfig"; sourceTree = "<group>"; };
+		FD8F218E23547DD200D1978D /* Schedule Background Task New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Schedule Background Task New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD8F219123547DD200D1978D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD8F219323547DD200D1978D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FD8F219523547DD200D1978D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD8F219823547DD200D1978D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD8F219A23547DD300D1978D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD8F219D23547DD300D1978D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD8F219F23547DD300D1978D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD8F21A5235480CC00D1978D /* BackgroundTaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTaskService.swift; sourceTree = "<group>"; };
+		FD8F21A9235484AA00D1978D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FDB4F89F2358E5F30029EC03 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD8F218B23547DD200D1978D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB68A810227A070088E2D5FC /* Pods_Schedule_Background_Task_New.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		566F6C65C1AEFBD55D5C81A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7D00A3D15237FE88015C516 /* Pods-Schedule Background Task New.debug.xcconfig */,
+				6D6C85094DD35B23917F673C /* Pods-Schedule Background Task New.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6D73746A58F074D408ACC293 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50A0AB68BFD76D6ACCD77F0E /* Pods_Schedule_Background_Task_New.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD8F218523547DD200D1978D = {
+			isa = PBXGroup;
+			children = (
+				FD8F219023547DD200D1978D /* Schedule Background Task New */,
+				FD8F218F23547DD200D1978D /* Products */,
+				566F6C65C1AEFBD55D5C81A3 /* Pods */,
+				6D73746A58F074D408ACC293 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD8F218F23547DD200D1978D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD8F218E23547DD200D1978D /* Schedule Background Task New.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD8F219023547DD200D1978D /* Schedule Background Task New */ = {
+			isa = PBXGroup;
+			children = (
+				FD8F219123547DD200D1978D /* AppDelegate.swift */,
+				FD8F219523547DD200D1978D /* ViewController.swift */,
+				FD8F21A5235480CC00D1978D /* BackgroundTaskService.swift */,
+				FD8F219323547DD200D1978D /* SceneDelegate.swift */,
+				FDB4F89F2358E5F30029EC03 /* ImageModel.swift */,
+				FD8F219723547DD200D1978D /* Main.storyboard */,
+				FD8F219A23547DD300D1978D /* Assets.xcassets */,
+				FD8F219C23547DD300D1978D /* LaunchScreen.storyboard */,
+				FD8F219F23547DD300D1978D /* Info.plist */,
+				FD8F21A9235484AA00D1978D /* GoogleService-Info.plist */,
+			);
+			path = "Schedule Background Task New";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD8F218D23547DD200D1978D /* Schedule Background Task New */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD8F21A223547DD300D1978D /* Build configuration list for PBXNativeTarget "Schedule Background Task New" */;
+			buildPhases = (
+				38B7134C4AA470C179D2CF5B /* [CP] Check Pods Manifest.lock */,
+				FD8F218A23547DD200D1978D /* Sources */,
+				FD8F218B23547DD200D1978D /* Frameworks */,
+				FD8F218C23547DD200D1978D /* Resources */,
+				D95BCEF5C359A54F08125237 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Schedule Background Task New";
+			productName = "Schedule Background Task New";
+			productReference = FD8F218E23547DD200D1978D /* Schedule Background Task New.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD8F218623547DD200D1978D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = X901;
+				TargetAttributes = {
+					FD8F218D23547DD200D1978D = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = FD8F218923547DD200D1978D /* Build configuration list for PBXProject "Schedule Background Task New" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD8F218523547DD200D1978D;
+			productRefGroup = FD8F218F23547DD200D1978D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD8F218D23547DD200D1978D /* Schedule Background Task New */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD8F218C23547DD200D1978D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD8F219E23547DD300D1978D /* LaunchScreen.storyboard in Resources */,
+				FD8F21AA235484AA00D1978D /* GoogleService-Info.plist in Resources */,
+				FD8F219B23547DD300D1978D /* Assets.xcassets in Resources */,
+				FD8F219923547DD200D1978D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38B7134C4AA470C179D2CF5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Schedule Background Task New-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D95BCEF5C359A54F08125237 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Schedule Background Task New/Pods-Schedule Background Task New-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Schedule Background Task New/Pods-Schedule Background Task New-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Schedule Background Task New/Pods-Schedule Background Task New-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD8F218A23547DD200D1978D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD8F219623547DD200D1978D /* ViewController.swift in Sources */,
+				FDB4F8A02358E5F30029EC03 /* ImageModel.swift in Sources */,
+				FD8F219223547DD200D1978D /* AppDelegate.swift in Sources */,
+				FD8F21A6235480CC00D1978D /* BackgroundTaskService.swift in Sources */,
+				FD8F219423547DD200D1978D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FD8F219723547DD200D1978D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD8F219823547DD200D1978D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD8F219C23547DD300D1978D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD8F219D23547DD300D1978D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD8F21A023547DD300D1978D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD8F21A123547DD300D1978D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD8F21A323547DD300D1978D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7D00A3D15237FE88015C516 /* Pods-Schedule Background Task New.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CP92CMD5E4;
+				INFOPLIST_FILE = "Schedule Background Task New/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.basil.Schedule-Background-Task-New";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD8F21A423547DD300D1978D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D6C85094DD35B23917F673C /* Pods-Schedule Background Task New.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CP92CMD5E4;
+				INFOPLIST_FILE = "Schedule Background Task New/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.basil.Schedule-Background-Task-New";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD8F218923547DD200D1978D /* Build configuration list for PBXProject "Schedule Background Task New" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD8F21A023547DD300D1978D /* Debug */,
+				FD8F21A123547DD300D1978D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD8F21A223547DD300D1978D /* Build configuration list for PBXNativeTarget "Schedule Background Task New" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD8F21A323547DD300D1978D /* Debug */,
+				FD8F21A423547DD300D1978D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD8F218623547DD200D1978D /* Project object */;
+}

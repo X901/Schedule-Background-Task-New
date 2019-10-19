@@ -38,7 +38,7 @@ this depend on my testing
 because we only need it for testing only , it's not good idea to make it like this on Production version !
 
 - move `GoogleService-Info.plist` that you did download from `Firebase` website to the project
-- you need to use `Cocoapods` if you don't already have it installed on you Mac install it from they website
+- you need to use `Cocoapods` if you don't already have it installed on you Mac install it from their website
 - open Terminal
 - move the project folder above `Terminal` icon . This is the fastest way to go directly indisd the project folder on `Terminal`
 - then final step write `pod install` on terminal to install Firebase Storage and Realm Libreies 
@@ -86,7 +86,7 @@ The great example on debugging it , you can test it if you do the above code and
 you will notice the task stop before uplouding all images that mean it working fine !
 
 
-### Resourse 
+### Resources 
 - https://developer.apple.com/videos/play/wwdc2019/707/
 - https://developer.apple.com/documentation/backgroundtasks
 - https://medium.com/snowdog-labs/managing-background-tasks-with-new-task-scheduler-in-ios-13-aaabdac0d95b

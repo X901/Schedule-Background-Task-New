@@ -7,10 +7,10 @@
 I did add 10 images with high quailiy (every image have size between 1 MB to 3 MB) on Assets Folder
 if you want to know where I got them is from https://unsplash.com/
 
-When you open the application for the frist time it will save the 10 imges on Decoment Folder
-and save the name of the image on Realm local database
+When you open the application for the frist time it will saving 10 images on Decoment Folder
+and save the names of images on Realm local database
 
-on the application you will see the counter f the images on Realm folder
+on the application you will see the counter of images on Realm database
 
 When the background task happend it will uploud image one by one to Firebase storage
 and delete it from Realm and also delete the image from Decount Folder

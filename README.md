@@ -52,14 +52,30 @@ Apple said you can debug the Background task by doing this steps
 
 `e -l objc -- (void)[[BGTaskScheduler sharedScheduler] _simulateLaunchForTaskWithIdentifier:@"com.basil.imagesuploud"]`
 
-notice that my background task idntifier is com.basil.imagesuploud
-I did added iton info.plist file you need to change it depend on your Identifier if you will only test my project it will be the same idntifier
+notice that my background task idntifier is `com.basil.imagesuploud`
+I did added it on info.plist file you need to change it depend on your Identifier. if you will only test my Demo project it will be the same idntifier
 
-after write the line and click enter
-the excode will said
+after write that line and click enter
+Xcode will said
 
 2019-10-19 17:00:14.615646+0300 Schedule Background Task New[48148:1564536] Simulating launch for task with identifier com.basil.imagesuploud
 
-now click on `Play` button (this button you will find it above debug logs)
+now click on `Play` button (this button you will found it above debug logs)
 
-now the background will start immediately will see if it work or not !
+now the background will start immediately. you will see if it work or not !
+return back to the application you will see it chagne to 0
+and when you check the Firebase Storage you will find all the images there 
+
+### one last thing is to debug if the system kill/stop the background task
+same steps as before but only change it to 
+`e -l objc -- (void)[[BGTaskScheduler sharedScheduler] _simulateExpirationForTaskWithIdentifier:@"com.basil.imagesuploud"]`
+
+The great example on debugging it , you can test it if you do the above code and after that do the bloew code on very shurt time
+you will notice the task stop before uplouding all images that mean it working fine !
+
+
+### Resourse 
+- https://developer.apple.com/videos/play/wwdc2019/707/
+- https://developer.apple.com/documentation/backgroundtasks
+- https://medium.com/snowdog-labs/managing-background-tasks-with-new-task-scheduler-in-ios-13-aaabdac0d95b
+

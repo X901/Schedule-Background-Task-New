@@ -1,6 +1,6 @@
 # Schedule-Background-Task-New
 
-### This is a example on how to uplouds images on Background in iOS 13 using new Framework
+### This is an example on how to uplouds images on Background in iOS 13 using new Framework
 ### called BackgroundTasks
 
 ### About the Project:

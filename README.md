@@ -37,7 +37,7 @@ this depend on my testing
 
 because we only need it for testing only , it's not good idea to make it like this on Production version !
 
-- move `GoogleService-Info.plist` that you did downloaded from `Firebase` website to the project
+- move `GoogleService-Info.plist` that you did download from `Firebase` website to the project
 - you need to use `Cocoapods` if you don't already have it installed on you Mac install it from they website
 - open Terminal
 - move the project folder above `Terminal` icon . This is the fastest way to go directly indisd the project folder on `Terminal`
